@@ -53,6 +53,7 @@ async function run() {
         // Generate QR code for user
         app.get('/users/:userId/qr-code', async (req, res) => {
             const userId = req.params.userId;
+            console.log("log here id",userId);
             // const userProfileUrl = `https://your-app-domain.com/profile/${userId}`; 
             const userProfileUrl = `http://localhost:5173/profile/${userId}`;
 
